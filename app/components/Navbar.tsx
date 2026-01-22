@@ -12,12 +12,12 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile View - Home Header */}
-      <div className="md:hidden">
+      <div className="md:hidden ">
         {/* Status Bar */}
 
 
         {/* Navigation Bar */}
-        <div className="flex items-center justify-between px-4 py-3 bg-black">
+        <div className="flex items-center justify-between px-4 py-3 bg-black z-50 relative">
           {/* Avatar/Profile Icon */}
           <div className="w-10 h-10 rounded-full overflow-hidden">
             <Image
@@ -143,8 +143,8 @@ export default function Navbar() {
       )}
 
       {/* Web View */}
-      <div className="hidden md:block ">
-        <div className="flex items-center justify-between px-24 py-4 bg-transparent">
+      <div className="hidden md:block z-50">
+        <div className="flex items-center justify-between px-24 py-4 bg-transparent relative">
         {/* Logo */}
         <div className="relative w-12 h-12">
           <Image
